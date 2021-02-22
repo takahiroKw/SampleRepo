@@ -25,14 +25,14 @@ def exec02():
 def exec03():
     print("========= 課題00-3 =========")
 
-    names:str = ["たんじろう", "ぎゆう","ねずこ","むざん"]
+    names:str = ["たんじろう", "ぎゆう", "ねずこ", "むざん"]
 
     names.append("ぜんいつ")
 
     print(names)
 
 def exec04():
-    names:str = ["たんじろう", "ぎゆう","ねずこ","むざん"]
+    names:str = ["たんじろう", "ぎゆう", "ねずこ", "むざん"]
 
     names.append("ぜんいつ")
 
@@ -43,12 +43,19 @@ def exec05():
     child_func05()
 
 def exec06():
-    print("1 + 3 = {}".format(str(sum06(1, 3))))
+    sum06(input('検索するキャラ名を入力：'))
 
 # 以下、子関数
 def child_func05():
     print("子関数を呼び出しました")
    
-def sum06(a:int, b:int):
-    return a + b
-   
+def sum06(input_name:str):
+    names:str = ["たんじろう", "ぎゆう", "ねずこ", "むざん"]
+
+    names.append("ぜんいつ")
+
+    if input_name in names:
+        print('{}は含まれます'.format(input_name))
+    else:
+        print('{}は含まれていません'.format(input_name))
+    
