@@ -1,30 +1,20 @@
 import Exec_Kadai_00
 
-while True:
-    input_kadai_num: int = int(input('\n課題番号の入力(0で終了します): '))
+def main():
+    while True:
+        input_kadai_num: int = int(input('\n課題番号の入力(-1で終了します): '))
 
-    if input_kadai_num == 0:
-        print("終了します")
-        break
-        
-    elif input_kadai_num == 1:
-        Exec_Kadai_00.exec01()
+        if input_kadai_num == -1:
+            print("終了します")
+            break
+            
+        elif input_kadai_num == 0:
+            input_sub_num: int = int(input('課題のSUB番号を入力してください: '))
 
-    elif input_kadai_num == 2:
-        Exec_Kadai_00.exec02()
+            Exec_Kadai_00.exec_kadai_00(input_sub_num)
 
-    elif input_kadai_num == 3:
-        Exec_Kadai_00.exec03()
+        else:
+            print("Error 終了します")
+            break
 
-    elif input_kadai_num == 4:
-        Exec_Kadai_00.exec04()
-
-    elif input_kadai_num == 5:
-        Exec_Kadai_00.exec05()
-
-    elif input_kadai_num == 6:
-        Exec_Kadai_00.exec06()
-
-    else:
-        print("Error 終了します")
-        break
+main()

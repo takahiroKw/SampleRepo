@@ -1,3 +1,26 @@
+def exec_kadai_00(sub_num: int):
+    if sub_num == 1:
+        exec01()
+
+    elif sub_num == 2:
+        exec02()
+
+    elif sub_num == 3:
+        exec03()
+
+    elif sub_num == 4:
+        exec04()
+
+    elif sub_num == 5:
+        exec05()
+
+    elif sub_num == 6:
+        exec06()
+
+    else:
+        print('課題00にそのSUB番号はありません')
+   
+
 def exec01():
     print("========= 課題00-1 =========")
 
