@@ -1,3 +1,5 @@
+from util import MyTimer
+
 def exec_kadai_00(sub_num: int):
     if sub_num == 1:
         exec01()
@@ -73,6 +75,9 @@ def child_func05():
     print("子関数を呼び出しました")
    
 def sum06(input_name:str):
+    # 処理時間測定開始
+    MyTimer.sta_timer()
+
     names:str = ["たんじろう", "ぎゆう", "ねずこ", "むざん"]
 
     names.append("ぜんいつ")
@@ -82,3 +87,6 @@ def sum06(input_name:str):
     else:
         print('{}は含まれていません'.format(input_name))
     
+    # 処理時間測定終了
+    MyTimer.stp_timer()
+

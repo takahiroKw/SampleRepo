@@ -1,4 +1,5 @@
 import Exec_Kadai_00
+import Exec_Kadai_01
 
 def main():
     while True:
@@ -12,6 +13,11 @@ def main():
             input_sub_num: int = int(input('課題のSUB番号を入力してください: '))
 
             Exec_Kadai_00.exec_kadai_00(input_sub_num)
+
+        elif input_kadai_num == 1:
+            input_sub_num: int = int(input('課題のSUB番号を入力してください: '))
+
+            Exec_Kadai_01.exec_kadai_01(input_sub_num)
 
         else:
             print("Error 終了します")
